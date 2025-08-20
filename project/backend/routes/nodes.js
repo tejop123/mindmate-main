@@ -1,7 +1,8 @@
 const express = require("express");
 const bcrypt = require("bcrypt");
 const router = express.Router();
-const User = require("./User"); // ✅ adjust path since file is User.js in same folder
+// if User.js is inside backend/models
+const User = require("../models/User.js");
 
 // POST login or register user
 router.post("/", async (req, res) => {
