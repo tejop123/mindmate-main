@@ -25,7 +25,7 @@ app.get("/", (req, res) => {
 });
 
 // Routes
-const nodesRoutes = require("./nodes.js");  // ✅ your file is named nodes.js
+const nodesRoutes = require("./routes/nodes.js");
 app.use("/api/nodes", nodesRoutes);
 
 // MongoDB
